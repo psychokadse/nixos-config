@@ -44,6 +44,10 @@
       };
     };
   };
+
+	fileSystems = disko.fileSystems;
+	swapDevices = disko.swapDevices;
+
   boot.loader = {
     systemd-boot.enable = false;
     grub = {
