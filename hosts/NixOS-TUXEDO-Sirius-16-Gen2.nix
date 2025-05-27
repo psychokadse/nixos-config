@@ -5,7 +5,7 @@
       swapSize = "32G";
       inherit disko;
     })
-    home-manager.nixosModule.home-manager
+    home-manager.nixosModules.home-manager
   ];
 
   system.stateVersion = "25.05";
