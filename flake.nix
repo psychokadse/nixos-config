@@ -34,5 +34,10 @@
         })
       ];
     };
+
+    apps.x86_64-linux.disko-configure = {
+      type = "app";
+      program = "${disko.packages.x86_64-linux.disko}/bin/disko";
+    };
   };
 }
