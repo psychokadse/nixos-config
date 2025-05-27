@@ -1,7 +1,6 @@
-{ mainDevice, swapSize ? "32G", disko, ... }:
+{ mainDevice, swapSize ? "32G", ... }:
 
 {
-  imports = [ disko.nixosModules.disko ];
   disko.devices.disk.main = {
     type = "disk";
     device = mainDevice;

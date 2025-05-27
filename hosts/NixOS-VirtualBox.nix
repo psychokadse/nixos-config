@@ -1,9 +1,9 @@
 { home-manager, disko, ... }: {
   imports = [
     (import ./templates/encrypted-with-swap.nix {
+      inherit disko;
       mainDevice = "/dev/sda";
       swapSize = "8G";
-      inherit disko;
     })
     home-manager.nixosModules.home-manager
   ];

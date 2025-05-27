@@ -1,9 +1,9 @@
 { home-manager, disko, ... }:
 let
   diskLayout = import ./templates/encrypted-with-swap.nix {
+    inherit disko;
     mainDevice = "/dev/nvme0n1";
     swapSize = "32G";
-    inherit disko;
   };
 in {
   imports = [
